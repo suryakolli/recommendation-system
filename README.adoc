@@ -1,17 +1,21 @@
-Recommendation system build using neo4j.
+### Recommendation system build using neo4j.
 
 Dataset is taken from Open Movie Database and Movie Lens
 
 .env file should be populated with these fields.
 
-# Example .env file
+#### Example .env file
+
+```
 APP_PORT=3000
 NEO4J_URI=neo4j+s://xxxxxx.databases.neo4j.io
 NEO4J_USERNAME=neo4j
 NEO4J_PASSWORD=your-password-here
 JWT_SECRET=your-secret
 SALT_ROUNDS=10
+```
 
+```
 Two filtering techniques are used.
 1. Content-based filtering
 2. Collaborative filtering
@@ -22,4 +26,4 @@ In content based filtering
 In collaborative filtering
   i.  Cosine similarity
   ii. Pearson similarity
- 
+```
