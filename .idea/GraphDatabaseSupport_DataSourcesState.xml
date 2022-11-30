@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GraphDatabaseSupport.DataSourcesState">
+    <option name="containerV1">
+      <DataSourceContainerV1>
+        <option name="dataSources">
+          <list>
+            <DataSourceV1>
+              <option name="uuid" value="3484c84a-d621-4ef3-b46a-ff1b2afe5d20" />
+              <option name="name" value="MovieDB" />
+              <option name="dataSourceType" value="NEO4J_BOLT" />
+              <option name="configuration">
+                <map>
+                  <entry key="host" value="neo4j+s://64257417.databases.neo4j.io" />
+                  <entry key="password" value="IiajJvhGjPaUOqwyMq9j7caSO7TkxwfyumtHCtJToUg" />
+                  <entry key="port" value="7687" />
+                  <entry key="user" value="neo4j" />
+                </map>
+              </option>
+            </DataSourceV1>
+            <DataSourceV1>
+              <option name="uuid" value="7f119c18-5dc4-4621-87cd-149fc63adc78" />
+              <option name="name" value="BOLT" />
+              <option name="dataSourceType" value="NEO4J_BOLT" />
+              <option name="configuration">
+                <map>
+                  <entry key="host" value="bolt://64257417.databases.neo4j.io" />
+                  <entry key="password" value="IiajJvhGjPaUOqwyMq9j7caSO7TkxwfyumtHCtJToUg" />
+                  <entry key="port" value="7687" />
+                  <entry key="user" value="neo4j" />
+                </map>
+              </option>
+            </DataSourceV1>
+          </list>
+        </option>
+      </DataSourceContainerV1>
+    </option>
+  </component>
+</project>
