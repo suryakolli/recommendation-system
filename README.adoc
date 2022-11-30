@@ -1,3 +1,5 @@
+###### Note: repository is forked from neo4j graphacademy https://github.com/neo4j-graphacademy/app-nodejs
+
 ### Recommendation system build using neo4j.
 
 Dataset is taken from Open Movie Database and Movie Lens
