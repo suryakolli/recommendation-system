@@ -1,24 +1,25 @@
-= Building Neo4j Applications with Node.js
+Recommendation system build using neo4j.
 
-> Learn how to interact with Neo4j from Node.js using the Neo4j JavaScript Driver
+Dataset is taken from Open Movie Database and Movie Lens
 
-This repository accompanies the link:https://graphacademy.neo4j.com/courses/app-nodejs/[Building Neo4j Applications with Node.js course^] on link:https://graphacademy.neo4j.com/[Neo4j GraphAcademy^].
+.env file should be populated with these fields.
 
-For a complete walkthrough of this repository,  link:https://graphacademy.neo4j.com/courses/app-nodejs/[enrol now^].
+# Example .env file
+APP_PORT=3000
+NEO4J_URI=neo4j+s://xxxxxx.databases.neo4j.io
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=your-password-here
+JWT_SECRET=your-secret
+SALT_ROUNDS=10
 
-== A Note on comments
+Two filtering techniques are used.
+1. Content-based filtering
+2. Collaborative filtering
 
-You may spot a number of comments in this repository that look a little like this:
-
-[source,js]
-----
-// tag::something[]
-someCode()
-// end::something[]
-----
-
-
-We use link:https://asciidoc-py.github.io/index.html[Asciidoc^] to author our courses.
-Using these tags means that we can use a macro to include portions of code directly into the course itself.
-
-From the point of view of the course, you can go ahead and ignore them.
+In content based filtering
+  i.  Weighted content
+  ii. Jaccard index
+In collaborative filtering
+  i.  Cosine similarity
+  ii. Pearson similarity
+ 
