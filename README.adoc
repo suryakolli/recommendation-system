@@ -17,6 +17,9 @@ JWT_SECRET=your-secret
 SALT_ROUNDS=10
 ```
 
+This is a node js project. This contains a package.json which contains all the dependencies and scripts. To start the project, you need to install all the dependencies using ```npm install``` command and then to run the project we need to run ```npm start``` command.
+
+
 ```
 Two filtering techniques are used.
 1. Content-based filtering
