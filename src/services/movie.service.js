@@ -282,7 +282,7 @@ export default class MovieService {
           actors: [ (a)-[r:ACTED_IN]->(m) | a { .*, role: r.role } ],
           directors: [ (d)-[:DIRECTED]->(m) | d { .* } ],
           genres: [ (m)-[:IN_GENRE]->(g) | g { .name }],
-          ratingCount: size((m)<-[:RATED]-()),
+          ratingCount: count{((m)<-[:RATED]-())},
           favorite: m.tmdbId IN $favorites
         } AS movie
         LIMIT 1
